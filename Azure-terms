@@ -1,1 +1,18 @@
+What is cloud computing?
+  delivery compute service via internet.
+
+
+Cloud architect/models   -Private,public,hybid
+
+	private/onpremis -traditional/single organisation using private cloud,
+		 completely private,better security,cost(own vm,maintanance,power...)
+		 more responsibility nd less flexiblity  [CapX]-large invetments,maintain
+
+	public - azure,aws,google.....[OpX]-rent,consumption based,pay as u go
+		  purchase resource nd use it without any investment,more felxibity(which resource need use it),vendor responsiblity fr their hardware
+
+	hybrid - combine both environments private nd pub via VPN,expressroute
+		  run workloads in most appropriate loc
+		combine dif private cloud also,mostt flexibility
+
 
