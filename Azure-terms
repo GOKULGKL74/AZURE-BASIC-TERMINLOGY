@@ -13,6 +13,109 @@ Cloud architect/models   -Private,public,hybid
 
 	hybrid - combine both environments private nd pub via VPN,expressroute
 		  run workloads in most appropriate loc
-		combine dif private cloud also,mostt flexibility
+		  combine dif private cloud also,most flexibility
+		  eg :company needs to store in sensitive data in private nd additional storage in public
 
+Cloud service types:
+Iaas   -basic computing infrastructure
+	-responsible for:datacenter,network,physical server(VM),storage
+	hypervisor(infrastructure) host VMs [hyperv,VMware]
+	more responsiblity
 
+Paas   -pre-packaed cloud service [manage al physical aspects of IAAS  nd os]-app service
+	build on top of IAAS with os nd tools(dev tools)
+	manage develop/deploymnet service
+	focus on soln** not infrastructure** Bz cloud vendor take care of infras
+	eg:mysql
+	serverless:(advanced version)--run code without infras managemnet 	
+saas   -ready to use application  [subscription]
+
+Defense  - 7 layers of security
+	physical security(hardware access),--cloud vendor tke care
+	identity nd acces(identity to logon),
+	perimeter(netwrk based attacks,firewalls/DDoSpotection),
+	network (connection),
+	compute(secure vm(iaas)),
+	application(secrets to access app),data
+
+virtual machine
+	its IAAS
+	Virtualised server:hosted on underlyig hypervisor
+			   user has full control
+	software-based emulation of a physical computer
+
+VIRTUALIZATION :
+	install hypervisor on top of server .
+	hypervisor divide the physical serve to number of individual server
+
+HYPERVISOR:
+	Installled in physical server and divides the physical server into n server
+API
+	API is a set of rules and protocols that allows different software applications to communicate with each other. It defines how software components should interact.
+
+Region:
+	GRP of datacenter
+	independenet on each other
+
+How to choose region?
+	to minimize latency(near by users loc)
+	Feature(not al feature availble for all loc)
+	price
+region pair:
+	2 closely linked region for redutancy except brazil
+		each region s paired(dis 300 miles away)
+		outage failure (can resolve)
+		planned updtes	at 1 time and another 	
+		replication
+sovereign region
+	isolated region in govenment(china ,us)future-russia
+
+availability zone
+	physically seperated datacenter within azure region
+	min 1 r more datacenetr/zone 
+	each zone has seperte datacenter,power,netwrk[if any failure/traffc can access other with the hlp of LB]
+	each datacenter has independnt
+	TYPES:ZONAL(SPECIFIC),ZONE REDUDANT
+	
+	zone redudant service-automatically replicates acros zone(more cost bz more zone)
+
+scaling:
+horizontal-automatic/dynamic-autoscale*-elasticity*
+vertical-manual
+
+Horizontal -out/in
+	add vm load balancer distributed the traffic 
+	automatic,no downtime
+vertical  -up/down
+	increase compute resourse (add ram,cpu..)
+	manual,req downtime 
+VM SCALE SET(up t0 1000vm)at 0 cost
+	->add identical vm automatically if more traffic     with d help of load balancer(horizontal scaling)
+	->single region in dff zone
+
+disaster recovery: backup
+	restoring data if disater hpn
+
+autoscale-automaticlly add/remove VM from scale set when traffic hits /slow down
+
+reliabilty:
+	ability to recover from accident with less down time
+	no single point of failure
+	if one computer down other pick the load
+
+predictivity
+	consistent performance (autoscale),u knw cost as expect
+security:
+	control of security involvement
+governance:
+	tools to enforce company requiremnets
+managibility
+	tools contol cloud resource	
+load balancing:
+	Load Balancing is the distribution of network traffic or computing workload across multiple servers to ensure no single server is overwhelmed.
+
+..........
+
+Resource manager-create resourse
+resourse grp(mandatory): grouping resource  -to track,to manage
+region -->availability zone--->datacentr(1+)
