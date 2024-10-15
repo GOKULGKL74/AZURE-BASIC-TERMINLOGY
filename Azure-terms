@@ -119,3 +119,40 @@ load balancing:
 Resource manager-create resourse
 resourse grp(mandatory): grouping resource  -to track,to manage
 region -->availability zone--->datacentr(1+)
+
+....
+virtual netwrk:
+	Virtual Network (VNet)  is a logically isolated network that securely connects Azure resources
+FIREWALL:
+	Protect virtual netwrk (who can access /not)
+boston:
+	
+subnet :
+	to control traffic it was divided into subnets
+CIDR:
+	Represent IP adress that specify range of IP address
+ROUTE ND ROUTE TABLES:
+	route:traffic directed to destination(/lgin)
+     ROUTE TABLES:colletions of route
+NSG:
+	filtering inbound nd outbound traffic
+	each subnet hav NSG 
+ASG
+	grouped all ip (nsg)as single group name nd use
+AZURE APP GATEWAY:
+	L7
+AZURE LOAD BALANCE:
+	L4
+	Distributes incoming network traffic across multiple servers to ensure no single server is overwhelmed
+DNS:
+	INSIDE load balancer 
+	onvert incomingip address from user convet to domain name 
+VIRTUAL NETWRK PEERING
+	communicate 1 vnet to another 
+Vnet gateway
+	VNet Gateway enables secure communication between on-premises networks and Azure Virtual Networks. Key features include:
+Site-to-Site VPN: Connects on-premises networks to Azure over an encrypted VPN tunnel.
+Point-to-Site VPN: Enables secure remote access to Azure resources.
+
+VPN Gateway
+Azure VPN Gateway provides secure, site-to-site connectivity between your on-premises network and Azure. Key features include:
