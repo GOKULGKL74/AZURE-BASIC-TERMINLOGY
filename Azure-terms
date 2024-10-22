@@ -156,3 +156,17 @@ Point-to-Site VPN: Enables secure remote access to Azure resources.
 
 VPN Gateway
 Azure VPN Gateway provides secure, site-to-site connectivity between your on-premises network and Azure. Key features include:
+
+
+//////////////////////////
+storage
+1.blob storage /cntaines
+	used fr large unstructured datasuch as video,source code
+	Blobs are organized into containers
+	used in data analystics
+2.file storage
+	central repo for all vm(common storage for all vm)
+3.tables
+	key value
+4.queue
+	n number of req r there -req in queue 
